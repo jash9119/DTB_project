@@ -1,0 +1,172 @@
+#music-mate {
+  display: flex;
+  height: 100vh;
+  background: rgb(242, 214, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(242, 214, 255, 1) 23%,
+    rgba(255, 253, 253, 0) 97%
+  );
+}
+
+.musicmate-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  margin-left: 400px;
+}
+
+.top-container {
+  display: flex;
+  align-content: center;
+  margin: 2rem;
+
+}
+.input-container{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #e0d1ff;
+  width: 75%;
+  justify-content: center;
+  margin-inline: auto;
+  margin-block: 1rem;
+}
+.input-container-1 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #e0d1ff;
+  width: 50%;
+  justify-content: center;
+  margin-inline: auto;
+  margin-block: 1rem;
+}
+
+.input-container-2 {
+  display: none;
+}
+
+i.fas {
+  padding: 5px;
+  color: #8328ba;
+}
+
+input[type="text"] {
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  color: #8328ba;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .musicmate-right {
+    margin-left: 80px;
+  }
+
+  .input-container-1 {
+    display: none;
+  }
+
+  .input-container-2 {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #e0d1ff;
+    /* width: 90%; */
+    justify-content: center;
+    /* margin-inline: auto; */
+    margin-bottom: 2.5rem;
+  }
+}
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 95%;
+}
+
+th,
+td {
+  padding-inline: 2rem;
+  text-align: left;
+}
+
+th {
+  background: #e9baff;
+  padding-block: 1rem;
+}
+
+td {
+  padding-block: 0.5rem;
+}
+.delete-btn:hover {
+  background-color: lightcoral;
+  scale: 110%;
+  border-style: none;
+}
+.delete-btn {
+  background-color: transparent;
+  width: 60px;
+  text-align: center;
+  border-radius: 20px;
+  /* padding-block: 5px; */
+  border-style: 0.5px solid;
+  border-color: black;
+
+}
+
+
+.profile-btn{
+  /* display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #e9baff;
+  width: 100%;
+  justify-content: center;
+  margin-inline: auto;
+  margin-right: 2rem;
+  border: none;
+  font-size: large; */
+  margin: 25px;
+  background: linear-gradient(
+    90.11deg,
+    rgba(200, 83, 219, 0.18) 32.29166567325592%,
+    rgba(200, 83, 219, 0.1) 100%
+  );
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #a654d8;
+  border-width: 2px;
+  width: 150px;
+  height: 40px;
+  position: relative;
+  font: 600  "NotoSans-SemiBold", sans-serif;
+  color: #a654d8;
+  font-size: 1.2rem;
+  float:right;
+}
+
+.fa-regular fa-user{
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  background-color: transparent;
+  width: 60px;
+  text-align: center;
+  border-radius: 20px;
+  padding-block: 5px;
+  border-style: 0.5px solid;
+  border-color: black;
+}

@@ -1,0 +1,64 @@
+#mateProfile {
+  display: flex;
+  height: 100vh;
+  background: rgb(242, 214, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(242, 214, 255, 1) 23%,
+    rgba(255, 253, 253, 0) 97%
+  );
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  margin-left: 400px;
+}
+
+.top-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.profile-pic {
+  width: 200px;
+}
+
+.add-friend-btn {
+  background-color: #8d2182;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  padding-inline: 1.5rem;
+  padding-block: 10px;
+  font-size: 1rem;
+  margin-block: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 95%;
+}
+
+th,
+td {
+  padding-inline: 2rem;
+  text-align: left;
+}
+
+th {
+  background: #e9baff;
+  padding-block: 1rem;
+}
+
+td {
+  padding-block: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+

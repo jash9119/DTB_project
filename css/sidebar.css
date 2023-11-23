@@ -1,0 +1,106 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+.sidenav {
+  box-shadow: rgba(168, 108, 190, 0.2) 0 -25px 18px -14px inset,
+    rgba(168, 108, 190, 0.2) 0 1px 2px, rgba(168, 108, 190, 0.2) 0 2px 4px,
+    rgba(168, 108, 190, 0.2) 0 4px 8px, rgba(168, 108, 190, 0.2) 0 8px 16px,
+    rgba(168, 108, 190, 0.2) 0 16px 32px;
+  font-family: "Quicksand", sans-serif;
+  height: 100%;
+  width: 350px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: 0.5s;
+
+  background: rgb(238, 202, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(238, 202, 255, 1) 23%,
+    rgba(243, 217, 254, 1) 53%,
+    rgba(255, 253, 253, 0) 97%,
+    rgba(255, 253, 253, 0) 100%,
+    rgba(255, 253, 253, 0) 118%
+  );
+}
+
+.logo {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+}
+
+.title {
+  color: #bf52a2;
+  margin-left: 1rem;
+  font-size: 3rem;
+}
+
+.sidenav a {
+  display: flex;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-family: "Noto Sans";
+  font-size: 18px;
+  color: black;
+  transition: 0.3s;
+  align-items: center;
+  gap: 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60vh;
+  width: 280px;
+  margin: auto;
+  padding-block: 1rem;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: "Quicksand", sans-serif;
+
+  font-weight: bold;
+
+  /* background: rgb(194, 170, 209);
+  background: rgb(194, 170, 209);
+  background: linear-gradient(
+    180deg,
+    rgba(194, 170, 209, 1) 6%,
+    rgba(217, 202, 226, 1) 100%,
+    rgba(255, 253, 253, 0) 100%
+  ); */
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .sidenav {
+    width: 80px;
+  }
+
+  .title {
+    display: none;
+  }
+  .sidenav i {
+    display: flex;
+    justify-content: center;
+    padding-block: 14px;
+    font-size: 18px;
+  }
+
+  .sidebar-menu {
+    border-radius: 0;
+  }
+  .sidebar-menu p {
+    display: none;
+  }
+}

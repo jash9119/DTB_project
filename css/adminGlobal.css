@@ -1,0 +1,124 @@
+#global {
+  height: 100%;
+  display: grid;
+  background: rgb(242, 214, 255);
+}
+.global-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  margin-left: 400px;
+}
+@media screen and (max-width: 768px) {
+  .global-right {
+    margin-left: 80px;
+  }
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #e0d1ff;
+  width: 70%;
+  justify-content: center;
+  margin-inline: auto;
+  margin-block: 1rem;
+}
+
+input[type="text"] {
+  border: none;
+  font-size: 1rem;
+  font-family: "Noto Sans";
+  outline: none;
+  width: 100%;
+  color: #7e00cc;
+  background-color: transparent;
+}
+
+table {
+  border-collapse: separate;
+  margin: auto;
+  width: 95%;
+}
+tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+tr:first-child th:first-child {
+  border-bottom-left-radius: 10px;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+tr:first-child th:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+th,
+td {
+  padding-inline: 2rem;
+  text-align: left;
+}
+
+th {
+  background: #e9baff;
+  border: 1px solid #e9baff;
+  padding-block: 1rem;
+}
+
+td {
+  padding-block: 0.5rem;
+}
+
+.view-btn:hover {
+  background-color: lightgreen;
+}
+
+.edit-btn:hover {
+  background-color: lightblue;
+}
+
+.delete-btn:hover {
+  background-color: lightcoral;
+}
+
+button {
+  background-color: transparent;
+  width: 60px;
+  text-align: center;
+  border-radius: 20px;
+  padding-block: 5px;
+  border-style: 0.5px solid;
+  border-color: black;
+}
+
+button:hover {
+  scale: 110%;
+  border-style: none;
+}
+
+/* button.add-btn {
+  background: linear-gradient(
+    90.11deg,
+    rgba(200, 83, 219, 0.18) 32.29166567325592%,
+    rgba(200, 83, 219, 0.1) 100% );
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #a654d8;
+    border-width: 3px;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    font: 600 16px "NotoSans-SemiBold", sans-serif;
+    color: #a654d8;
+} */
+
+.bio-txt {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  width: 150px; /* Adjust the width according to your needs */
+}

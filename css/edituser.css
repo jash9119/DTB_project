@@ -1,0 +1,142 @@
+#signup {
+  height: 100%;
+  display: grid;
+  background: rgb(242, 223, 250);
+}
+
+body {
+    background-color: #fdf4fe;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 5rem;
+  }
+  .main {
+    width: 80%;
+    background-color: #eeddf0;
+    margin: auto;
+    padding-top: 1rem;
+    border-radius: 5px;
+  }
+  
+  .edit-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    margin-left: 300px;
+  }
+
+  label.required::after {
+    content: " *";
+    color: red;
+  }
+  
+  .title1 {
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  
+  .container {
+    justify-content: center;
+    margin: auto;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap : 50px;
+  }
+  .form1 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+  }
+  
+  .form2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-block: 0px;
+    width: 80%;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  
+  .year-container {
+    min-width: 350px;
+    position: relative;
+  }
+  
+  select {
+    appearance: none;
+    /*  safari  */
+    -webkit-appearance: none;
+    /*  other styles for aesthetics */
+    width: 90%;
+    font-size: 1.10rem;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.5rem;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  
+  .global-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  
+  
+  input {
+    font-size: 16px;
+    border: none;
+    padding-top: 0.8rem;
+  
+    background-color: #fdf4fe;
+    border-bottom: 1px solid darkslategrey;
+  }
+  
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-register {
+    background-color: #8d2182;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    padding-inline: 1.5rem;
+    padding-block: 10px;
+    font-size: 1rem;
+    margin-block: 1rem;
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  

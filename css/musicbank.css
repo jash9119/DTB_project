@@ -1,0 +1,133 @@
+#music-bank {
+  display: flex;
+  height: 100vh;
+  background: rgb(242, 214, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(242, 214, 255, 1) 23%,
+    rgba(255, 253, 253, 0) 97%
+  );
+}
+
+.musicbank-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  margin-left: 400px;
+}
+.top-container {
+  display: flex;
+  align-content: center;
+  margin: 2rem;
+}
+
+.input-container{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #e0d1ff;
+  width: 75%;
+  justify-content: center;
+  margin-inline: auto;
+  margin-block: 1rem;
+  margin-left: 2rem;
+}
+.input-container-1 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #e0d1ff;
+  width: 35%;
+  justify-content: center;
+  margin-inline: auto;
+  margin-block: 1rem;
+}
+
+.input-container-2 {
+  display: none;
+}
+
+i.fas {
+  padding: 5px;
+  color: #8328ba;
+}
+
+input[type="text"] {
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  color: #8328ba;
+  background-color: transparent;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 95%;
+}
+
+th,
+td {
+  padding-inline: 2rem;
+  text-align: left;
+}
+
+th {
+  background: #e9baff;
+  padding-block: 1rem;
+}
+
+td {
+  padding-block: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .musicbank-right {
+    margin-left: 80px;
+  }
+
+  .input-container-1 {
+    display: none;
+  }
+
+  .input-container-2 {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #e0d1ff;
+    width: 90%;
+    justify-content: center;
+    margin-inline: auto;
+    margin-bottom: 2.5rem;
+  }
+}
+.delete-btn:hover {
+  background-color: lightcoral;
+  scale: 110%;
+  border-style: none;
+}
+.delete-btn {
+  background-color: transparent;
+  width: 60px;
+  text-align: center;
+  border-radius: 20px;
+  /* padding-block: 5px; */
+  border-style: 0.5px solid;
+  border-color: black;
+
+}
+
+button{
+  background-color: transparent;
+  width: 60px;
+  text-align: center;
+  border-radius: 20px;
+  padding-block: 5px;
+  border-style: 0.5px solid;
+  border-color: black;
+}

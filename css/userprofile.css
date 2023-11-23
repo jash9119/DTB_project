@@ -1,0 +1,110 @@
+#userprofile {
+  display: flex;
+  height: 100vh;
+  background: rgb(242, 214, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(242, 214, 255, 1) 23%,
+    rgba(255, 253, 253, 0) 97%
+  );
+}
+
+.userprofile-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  margin-left: 400px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 6rem;
+}
+
+#personal-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#school-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  border: none;
+  padding-top: 0.8rem;
+  background-color: transparent;
+  border-bottom: 2px solid #a890db;
+  width: 80%;
+}
+
+label {
+  margin-top: 2rem;
+  font-size: 18px;
+}
+
+.btn-edit {
+  /* background-color: #a890db;
+  border-style: none;
+  border-radius: 20px;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin: 1rem;
+  padding-inline: 2rem; */
+  margin: 25px;
+  background: linear-gradient(
+    90.11deg,
+    rgba(200, 83, 219, 0.18) 32.29166567325592%,
+    rgba(200, 83, 219, 0.1) 100%
+  );
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #a654d8;
+  border-width: 3px;
+  width: 150px;
+  height: 40px;
+  position: relative;
+  font: 600 16px "NotoSans-SemiBold", sans-serif;
+  color: #a654d8;
+}
+
+.top-container {
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .userprofile-right {
+    margin-left: 80px;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #personal-container {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  #school-container {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .btn-edit {
+    font-size: 0.8rem;
+    padding-inline: 1.5rem;
+  }
+}
+
